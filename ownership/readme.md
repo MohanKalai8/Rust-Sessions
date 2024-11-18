@@ -16,7 +16,7 @@
 3. When the owner goes out of scope, the value will be dropped.
    
 ## The string Type
-This below struct will be stored in heap. we can push data to this string type
+This below struct will be stored in heap.
 ```
 let s = String::from("hello");
 ```

@@ -33,5 +33,5 @@ fn makes_copy(some_integer: i32) {
 fn calculate_length(s: String) -> (String, usize) {
     let length = s.len(); // len() returns the length of a String
 
-    (s, length)
+    (s, length) // returns string ownership and length
 }
