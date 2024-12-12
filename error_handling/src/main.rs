@@ -57,6 +57,12 @@ fn main() {
     
 }
 
+// fn main() -> Result<(), Box<dyn Error>> {
+//     let greeting_file = File::open("hello.txt");
+
+//     Ok(())
+// }
+
 fn divide(x:i32,y:i32) -> Result<i32, String>{
     if y == 0 {
         return Err(String::from("Please do not divide by zero"));
@@ -94,7 +100,7 @@ fn read_username_from_file_shorter() -> Result<String, io::Error> {
 }
 
 fn read_username_from_file_shortest() -> Result<String, io::Error> {
-    fs::read_to_string("hello.txt")
+    fs::read_to_string("hello.txt") // reads a files into a string
 }
 
 fn last_char_of_first_line(text: &str) -> Option<char> {

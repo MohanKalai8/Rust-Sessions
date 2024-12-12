@@ -5,6 +5,8 @@
 
 ### Vector
 - allows you to store more than one value in a single data structure. vectors can only store values of the same type. It is dynamically sized
+  - Default integer type is `i32`
+  - Imp: Iterators contain a pointer to data within the vector
 
 ```rust
 let v: Vec<i32> = Vec::new();

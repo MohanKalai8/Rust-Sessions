@@ -1,6 +1,12 @@
 ## Strings
-- The `String` type is a growable, mutable, owned, UTF-8 encoded string type.
-- When Rustaceans refer to "strings" they might be referring to either the `String` or the string slice `&str`
+- Both `String` and string slices are UTF-8 encoded .
+- Updating a String
+    - we can use `+` operator, or `format!` macro to concatenate String values.
+    - append to a `String` with `push_str`. It takes a string slice, so no ownership taken
+    - the `push` method takes a single character as a parameter and adds it to the String.
+- A `String` is a wrapper over a `Vec<u8>`
+- The best way to operate on pieces of strings is to be explicit about whether you want characters or bytes
+- `&str` is a promise that the byte sequence it points to will always be valid UTF-8. Therefore a programmer who wants to e.g. print out an `&str` never needs to check if it is valid, or worry about accidentally interpreting an invalid string.
 
 ### Creating a New String
 - String is implemented as wrapper around a vector of bytes with some extra guarantees, restrictions, and capabilities.

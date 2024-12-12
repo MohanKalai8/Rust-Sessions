@@ -19,3 +19,5 @@ enum Result<T, E>{
 ```
 - `T` is type of the value that will be returned in a success
 - `E` represents the type of the error that will be returned in a failure case
+
+- We only allow to use the `?` operator in a fn that returns `Result`, `Option`

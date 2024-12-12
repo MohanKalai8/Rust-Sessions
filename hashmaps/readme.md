@@ -1,4 +1,7 @@
 ## Hashmaps
+- HashMap<K, V> : stores a mapping of keys of type K to values of type V using a hashing function.
+- All the keys must have same type and all values must have same type.
+  
 - Creation
 ```rust
 use std::collections::HashMap;
