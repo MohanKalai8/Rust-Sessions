@@ -1,5 +1,5 @@
 ## Generics
-We use generics to create definitions for items like function signatures or structs,whic we can then use with many different concrete data types.
+We use generics to create definitions for items like function signatures or structs,while we can then use with many different concrete data types.
 
 - Generics helps us to reduce code duplication.
 - We can use generics on struct Definitions
