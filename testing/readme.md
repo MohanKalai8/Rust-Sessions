@@ -10,3 +10,7 @@ To only run the ignored tests
 
 if we want to run all tests whether they're ignored or not
 - `cargo test -- --include-ignored`
+
+To run specific integration test
+- `cargo test --test integration_test`
+This above command runs only the tests in the `tests/integration_test.rs` file.
